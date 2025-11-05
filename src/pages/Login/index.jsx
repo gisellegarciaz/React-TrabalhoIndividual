@@ -96,24 +96,24 @@ export const LoginPage = ({
                         />
                     </div>
 
-                    {/* Password Field */}
+                    {/* -------------------Password Field -------------------*/}
                     <div style={styles.labels}>
                         <div style={styles.label}>
 
-                        <label
-                            htmlFor="password"
-                            
-                            >
-                            Password
-                        </label>
-                        <label style={styles.forgotPassword}
-                            htmlFor="Forgot password?"
-                            >
-                            Forgot password?
-                        </label>
-                            </div>
+                            <label
+                                htmlFor="password"
 
-                    
+                            >
+                                Password
+                            </label>
+                            <label style={styles.forgotPassword}
+                                htmlFor="Forgot password?"
+                            >
+                                Forgot password?
+                            </label>
+                        </div>
+
+
                         <input
                             id="password"
                             type="password"
@@ -127,7 +127,7 @@ export const LoginPage = ({
                         />
                     </div>
 
-                    {/* Sign In Button */}
+                    {/* ----------------------------- Sign In Button ----------------------------- */}
                     <button
                         type="submit"
                         style={getSignInButtonStyle()}
@@ -140,21 +140,24 @@ export const LoginPage = ({
                     </button>
                 </form>
 
-                {/* Divider */}
+                {/* ----------------------------- Divider ----------------------------- */}
                 <div style={styles.dividerContainer}>
                     <div style={styles.dividerLine}></div>
                     <span style={styles.dividerText}>or</span>
                     <div style={styles.dividerLine}></div>
                 </div>
 
-                {/* Social Login Buttons */}
+                {/* ----------------------------- Social Login Buttons ----------------------------- */}
                 <div style={styles.socialButtonsContainer}>
-                    {/* Continue with Google */}
-                    {/* <button
-                        onClick={onGoogleLogin}
+
+                    {/* ----------------------- Continue with Google ---------------------------*/}
+                    <button
+                        type="submit"
                         style={getGoogleButtonStyle()}
                         onMouseEnter={() => setIsGoogleHovered(true)}
                         onMouseLeave={() => setIsGoogleHovered(false)}
+                        onMouseDown={() => setIsGoogleActive(true)}
+                        onMouseUp={() => setIsGoogleActive(false)}
                     >
                         <svg
                             style={styles.googleIcon}
@@ -179,14 +182,15 @@ export const LoginPage = ({
                             />
                         </svg>
                         Continue with Google
-                    </button> */}
-
-                    {/* Continue with Apple */}
-                    {/* <button
-                        onClick={onAppleLogin}
+                    </button>
+                    {/* ------------------------- Continue with Apple --------------------------*/}
+                    <button
+                        type="submit"
                         style={getAppleButtonStyle()}
                         onMouseEnter={() => setIsAppleHovered(true)}
                         onMouseLeave={() => setIsAppleHovered(false)}
+                        onMouseDown={() => setIsAppleActive(true)}
+                        onMouseUp={() => setIsAppleActive(false)}
                     >
                         <svg
                             style={styles.appleIcon}
@@ -196,8 +200,27 @@ export const LoginPage = ({
                             <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
                         </svg>
                         Continue with Apple
-                    </button> */}
+                    </button>
+
+                    {/* ------------------------- New to Github? --------------------------*/}
+
+                    <div style={styles.divAccounts}>
+                        <span>New to GitHub? </span>
+                        <span style={styles.newAccountLinks}> Create an account</span>
+                        <p style={styles.newAccountLinks}>Sign in with a passkey</p>
+                    </div>
                 </div>
+            </div>
+
+            {/* ---------------------------- Footer -----------------------------*/}
+
+            <div style={styles.footer}>
+                    <span>Terms</span>
+                    <span>Privacy</span>
+                    <span>Dos</span>
+                    <span>Contact GitHub Suport</span>
+                    <span>Manage Cookies</span>
+                    <span>Do not share my personal information</span>
             </div>
         </div>
     );

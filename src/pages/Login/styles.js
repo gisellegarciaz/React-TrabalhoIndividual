@@ -1,37 +1,42 @@
 export const styles = {
     container: {
-        minHeight: '100vh',
-        width: '100%',
+        height: '100vh',
+        width: '100vw',
         backgroundColor: '#0D1117',
         display: 'flex',
+        flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '1rem',
+        padding: '0',
         fontFamily: [
-        '-apple-system',
-        '"system-ui"',
-        '"Segoe UI"',
-        '"Noto Sans"',
-        'Helvetica',
-        'Arial',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"'
+            '-apple-system',
+            '"system-ui"',
+            '"Segoe UI"',
+            '"Noto Sans"',
+            'Helvetica',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"'
         ].join(', '),
         fontStyle: 'normal',
-        fontWeight: '500',
+        fontWeight: '300',
         color: '#F0F6FC',
         fontSize: '1rem',
         lineHeight: '30px',
     },
     wrapper: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
         width: '100%',
-        maxWidth: '28rem'
+        maxWidth: '23rem',
+        height: '100vh'
     },
     logoContainer: {
         display: 'flex',
         justifyContent: 'center',
-        marginBottom: '1.5rem'
+        marginBottom: '0.8rem'
     },
     logo: {
         display: 'flex',
@@ -44,6 +49,7 @@ export const styles = {
     },
     companyName: {
         fontSize: '1.25rem',
+        fontWeight: '500',
         fontWeight: 'normal',
         textAlign: 'center',
         marginBottom: '2rem'
@@ -52,7 +58,7 @@ export const styles = {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        gap: '1.5rem'
+        gap: '0.7rem'
     },
     label: {
         display: 'flex',
@@ -60,8 +66,7 @@ export const styles = {
         justifyContent: 'space-between',
         fontSize: '0.875rem',
         fontWeight: '500',
-        color: '#d1d5db',
-        marginBottom: '0.5rem'
+        color: '#d1d5db'
     },
     labels: {
         display: 'flex',
@@ -70,7 +75,7 @@ export const styles = {
         fontSize: '0.875rem',
         fontWeight: '500',
         color: '#d1d5db',
-        marginBottom: '0.5rem'  
+        marginBottom: '0.5rem'
     },
     forgotPassword: {
         color: '#3B82F6',
@@ -78,7 +83,7 @@ export const styles = {
         textDecoration: 'underline',
     },
     input: {
-        width: '28rem',
+        width: '100%',
         padding: '0.75rem 0rem',
         backgroundColor: 'transparent',
         border: '1px solid #374151',
@@ -96,17 +101,17 @@ export const styles = {
         width: '100%',
         background: '#238636',
         color: 'white',
-        fontWeight: '600',
+        fontWeight: '300',
         padding: '0.75rem 1rem',
         borderRadius: '0.5rem',
         border: 'none',
         cursor: 'pointer',
         transition: 'all 0.2s',
-        fontSize: '1rem'
+        fontSize: '1rem',
     },
     signInButtonHover: {
-        background: '##3bab07',
-        transform: 'scale(1.02)'
+        background: '#3a8a4a',
+        transform: 'scale(1.005)'
     },
     signInButtonActive: {
         transform: 'scale(0.98)'
@@ -132,12 +137,12 @@ export const styles = {
     },
     googleButton: {
         width: '100%',
-        backgroundColor: 'white',
-        color: '#111827',
-        fontWeight: '600',
+        backgroundColor: '#212830',
+        color: 'white',
+        fontWeight: '300',
         padding: '0.75rem 1rem',
         borderRadius: '0.5rem',
-        border: '1px solid #d1d5db',
+        border: '1px solid #4f5255ff',
         cursor: 'pointer',
         transition: 'all 0.2s',
         display: 'flex',
@@ -147,7 +152,7 @@ export const styles = {
         fontSize: '1rem'
     },
     googleButtonHover: {
-        backgroundColor: '#f3f4f6'
+        backgroundColor: '#2a3239'
     },
     googleIcon: {
         width: '1.25rem',
@@ -155,12 +160,12 @@ export const styles = {
     },
     appleButton: {
         width: '100%',
-        backgroundColor: 'black',
+        backgroundColor: '#212830',
         color: 'white',
-        fontWeight: '600',
+        fontWeight: '300',
         padding: '0.75rem 1rem',
         borderRadius: '0.5rem',
-        border: '1px solid #1f2937',
+        border: '1px solid #4f5255ff',
         cursor: 'pointer',
         transition: 'all 0.2s',
         display: 'flex',
@@ -170,10 +175,35 @@ export const styles = {
         fontSize: '1rem'
     },
     appleButtonHover: {
-        backgroundColor: '#111827'
+        backgroundColor: '#2a3239',
     },
     appleIcon: {
         width: '1.25rem',
         height: '1.25rem'
-    }
+    },
+    divAccounts: {
+        margin: '2rem',
+        textAlign: 'center',
+    },
+    newAccountLinks: {
+        color: '#3B82F6',
+        fontWeight: '400',
+        textDecoration: 'underline'
+    },
+    footer: {
+        display: 'flex',
+        alignItems: 'center',
+
+        justifyContent: 'space-evenly',
+        position: 'sticky',
+        width: '100%',
+        maxWidth: '100vw',
+        height: '3rem',
+        backgroundColor: '#2a3239',
+        color: 'white',
+        fontWeight: '400',
+        fontSize: '0.8rem',
+        color: '#9198a1',
+    },
+    
 };
