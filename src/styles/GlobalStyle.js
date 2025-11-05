@@ -1,16 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: "SF Mono";
-    src: local("SF Mono"), local("SFMono-Regular");
-    font-display: swap;
-  }
+  html {
+    font-family: -apple-system, 
+                  "system-ui", 
+                  "Segoe UI", 
+                  "Noto Sans", 
+                  Helvetica, 
+                  Arial, 
+                  sans-serif, 
+                  "Apple Color Emoji", 
+                  "Segoe UI Emoji";
+    color: rgb(240, 246, 252);
 
-  body {
-    margin: 0;
-    padding: 0;
-      }
+}
 `;
 
-export default GlobalStyles;
+export default GlobalStyle;

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import {LoginPage} from "./pages/Login";
+import { HomePage } from "./pages/Home";
+import GlobalStyle from "./styles/GlobalStyle";
 // import Home from "./pages/Home";
 
 export default function App() {
@@ -22,10 +24,15 @@ export default function App() {
 
   return (
     <>
+    <GlobalStyle />
+
       {/* {currentPage === "login" && <Login onLogin={handleLogin} />}
       {currentPage === "home" && <Home user={user} onLogout={handleLogout} />} */}
 
-      <LoginPage onLogin={handleLogin}/>
+      {/* <LoginPage onLogin={handleLogin}/> */}
+      <HomePage />
+
+
     </>
   );
 }

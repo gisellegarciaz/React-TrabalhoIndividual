@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { styles } from './styles';
+import Button from '../../components/Button';
 
 
 export const LoginPage = ({
