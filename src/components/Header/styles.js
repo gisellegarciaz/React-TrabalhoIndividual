@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-    maxWidth: 100%;
+    maxWidth: 100vw;
+    width: 100vw;
     height: 7.5rem;
     background-color: #010409;
     display: flex;
@@ -46,6 +47,7 @@ export const LinhaSuperior = styled.div`
 export const Nav = styled.nav`
     display: flex;
     align-items: center;
+    justify-content: left;
     gap: 25px;
     margin: 0 0 10rem 1rem;
     font-weight: 400;

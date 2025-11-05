@@ -26,12 +26,8 @@ export default function App() {
     <>
     <GlobalStyle />
 
-      {/* {currentPage === "login" && <Login onLogin={handleLogin} />}
-      {currentPage === "home" && <Home user={user} onLogout={handleLogout} />} */}
-
-      {/* <LoginPage onLogin={handleLogin}/> */}
-      <HomePage />
-
+      {currentPage === "login" && <LoginPage onLogin={handleLogin} />}
+      {currentPage === "home" && <HomePage />}
 
     </>
   );

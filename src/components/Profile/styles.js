@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const ProfileContainer = styled.div`
     font-size: 14px;
     color: #24292e;
-    margin-bottom: 4px;
+    margin-right: 2rem;
     gap: 9rem;
+    width: 25rem;
 `;
 
 export const ProfileImage = styled.img`
     display: flex;
-    width: 25rem;
+    width: 100%;
     border-radius: 50%;
     cursor: pointer;
     border: 0.1rem solid #b9b2b2ff;
@@ -47,8 +48,8 @@ export const Followers = styled.div`
 `
 
 export const Divider = styled.div`
-    width: 100%; /* Or a specific width like 80% */
-    height: 1px; /* The thickness of your divider */
+    width: 100%;
+    height: 1px;
     background-color: #929292ff; 
     margin: 2.3rem 0;
 `

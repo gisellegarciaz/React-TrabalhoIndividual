@@ -40,7 +40,7 @@ const Header = () => {
                     </BlocoActions>
                 </div>
             </LinhaSuperior>
-            <div>
+            
                 <Nav>
                     <NavItem><GoBook size={15}/> Overview</NavItem>
                     <NavItem><PiBookBookmarkLight size={15}/> Repositories</NavItem>
@@ -48,7 +48,7 @@ const Header = () => {
                     <NavItem>< PiPackageLight size={15}/> Packages</NavItem>
                     <NavItem><PiStar size={15}/> Stars</NavItem>
                 </Nav>
-            </div>
+         
 
         </HeaderContainer>
     );
