@@ -5,7 +5,7 @@ import { BiSolidDownArrow } from 'react-icons/bi';
 import { FaCircle } from "react-icons/fa";
 
 
-export default function RepositoryItem({ title, content, stack }) {
+export default function RepositoryItem({ title, content, stack , itemColor }) {
     return (
         <>
             <Container>
@@ -13,7 +13,7 @@ export default function RepositoryItem({ title, content, stack }) {
                 <Left>
                     <Titulo>{title}</Titulo>
                     <Paragraph>{content}</Paragraph>
-                    <span><FaCircle size={15} color="yellow"/> {stack} </span>
+                    <span><FaCircle size={15} color={itemColor}/> {stack} </span>
                 </Left>
                 
                 <Right>

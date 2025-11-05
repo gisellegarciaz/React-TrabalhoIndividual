@@ -33,6 +33,18 @@ export const BlocoActions = styled.div`
     align-items: center;
     gap: 1.2rem;
 `
+export const FilterButtons = styled.button`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 10px 15px;
+    background-color: #272727ff;
+    border: 0.03rem solid #929292ff;
+    border-radius: 6px;
+    font-size: 16px;
+    color:#fff;
+`
 
 export const LinhaSuperior = styled.div`
     display: flex;
@@ -70,3 +82,29 @@ export const ProfileImage = styled.img`
     border-radius: 50%;
     cursor: pointer;
 `;
+
+export const Span = styled.span`
+    border: 0.1rem solid #929292ff;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    width: 2rem;
+    height: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+`
+
+export const FindButton = styled.input`
+    padding: 10px 15px;
+    background-color: #272727ff;
+    border: 0.03rem solid #929292ff;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 55%;
+    transition: border-color 0.3s ease-in-out;
+
+    &::placeholder {
+    color: #9a9a9a;
+    }
+`
