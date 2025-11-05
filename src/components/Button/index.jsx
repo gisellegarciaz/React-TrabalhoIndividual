@@ -1,4 +1,3 @@
-// src/components/Button/index.jsx
 import React from 'react';
 import { BaseButton, Counter } from './styles';
 

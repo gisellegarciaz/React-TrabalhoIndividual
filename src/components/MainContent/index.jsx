@@ -1,11 +1,10 @@
 import React from "react";
-import { InputContainer, Label, Field } from "./styles";
+import { InputContainer } from "./styles";
 
-export default function MainContent({ label, type, value, onChange }) {
+export default function MainContent({ children }) {
   return (
     <InputContainer>
-      <Label>{label}</Label>
-      <Field type={type} value={value} onChange={onChange} />
+      {children}
     </InputContainer>
   );
 }

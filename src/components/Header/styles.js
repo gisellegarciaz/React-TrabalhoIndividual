@@ -47,7 +47,7 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     gap: 25px;
-    margin-bottom: 10rem;
+    margin: 0 0 10rem 1rem;
     font-weight: 400;
 `;
 

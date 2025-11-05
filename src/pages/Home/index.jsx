@@ -3,6 +3,8 @@ import { styles } from './styles';
 import MainBody from '../../components/MainBody';
 import MainContent from '../../components/MainContent';
 import Header from '../../components/Header';
+import { Profile } from '../../components/Profile';
+
 
 
 export const HomePage = () => {
@@ -11,6 +13,8 @@ export const HomePage = () => {
 
             <Header />
             <MainContent>
+                <Profile />
+
             </MainContent>
 
         </MainBody>
