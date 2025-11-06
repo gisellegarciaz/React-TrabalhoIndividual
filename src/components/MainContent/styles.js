@@ -5,6 +5,6 @@ export const InputContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   padding: 2rem;
-  width: 85vw;
+  width: 60vw;
 
 `;

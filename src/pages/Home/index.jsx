@@ -26,21 +26,21 @@ export const HomePage = () => {
 
                     <RepositoryItem 
                     title = "API-TrabalhoGrupo4"
-                    content = "Respositório do trabalho individual da disciplina de Desenvolvimento Web (React) da residência TIC/ Software do SERRATEC 2025.2."
+                    content = "Respositório do trabalho final da disciplina de API RESTful da residência TIC/ Software do SERRATEC 2025.2."
                     stack = "Java"
                     itemColor = "orange"
                     />
 
                     <RepositoryItem 
                     title = "FrontEssencial-TrabalhoGrupo5"
-                    content = "Respositório do trabalho individual da disciplina de Desenvolvimento Web (React) da residência TIC/ Software do SERRATEC 2025.2."
+                    content = "Harry Pobre - Trabalho em grupo da disciplina de Front-end Essencial da residência TIC/ Software do SERRATEC 2025.2."
                     stack = "HTML  CSS"
                     itemColor = "purple"
                     />
 
                     <RepositoryItem 
                     title = "POO-TrabalhoIndividual"
-                    content = "Respositório do trabalho individual da disciplina de Desenvolvimento Web (React) da residência TIC/ Software do SERRATEC 2025.2."
+                    content = "Respositório do trabalho individual da disciplina de Programação Orientada a Objetos da residência TIC/ Software do SERRATEC 2025.2."
                     stack = "Java"
                     itemColor = "yellow"
                     />
